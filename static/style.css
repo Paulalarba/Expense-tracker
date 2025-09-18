@@ -1,0 +1,43 @@
+/* General body style */
+body {
+    background-color: #390011 !important; /* light gray */
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Headings */
+h1 {
+    font-weight: 700;
+    color: #2c3e50; /* dark blue/gray */
+}
+
+/* Expense table */
+table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table header */
+thead {
+    background: #2c3e50;
+    color: white;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #1abc9c;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #16a085;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
