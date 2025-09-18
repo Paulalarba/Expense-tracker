@@ -89,7 +89,8 @@ def signup():
         username = request.form["username"]
         password = request.form["password"]
 
-        hashed_password = generate_password_hash(password, method="sha256")
+
+        hashed_password = generate_password_hash(password, method="pbkdf2:sha256")
 
         conn = get_db()
         cursor = conn.cursor()
@@ -103,7 +104,7 @@ def signup():
             conn.close()
             return f"Error: {e}"
         conn.close()
-
+        
         return redirect("/login")
     return render_template("signup.html")
 
